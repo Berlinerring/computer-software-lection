@@ -35,7 +35,7 @@ body {
     /* width: calc(99% - 280px); */
     position: relative;
     left: 0;
-    width: 100vw;
+    width: 100%;
     display: inline-block;
     vertical-align: bottom;
     box-sizing: border-box;
