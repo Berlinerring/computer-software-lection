@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    font-family: 'Noto Serif', serif;
+    color: #3a3a3a;
+}
+
+.typ-header {
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #333238;
+    position: relative;
+}
+
+.typ-header-dark {
+    background-color: #bc3b61;
+}
+
+.typ-section-title {
+    padding: 40px 0 20px;
+}
+
+.typ-section-title h2 {
+    border-bottom: 1px solid #575d6b; 
+}
+
+/* .typ-logo {
+    background: url(aseets/logo.png) no-repeat;
+    background-size: contain;
+    height: 175px;
+    width: 280px;
+    display: inline-block;
+} */
+
+.typ-menu {
+    /* width: calc(99% - 280px); */
+    position: relative;
+    left: 0;
+    width: 100vw;
+    display: inline-block;
+    vertical-align: bottom;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.typ-menu p {
+    display: inline-block;
+    margin: 36px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+    border-bottom: 2px solid #9ac4f8;
+}
+
+.typ-header-dark p{
+    border-color: #14bfff;
+    color: #ffffff;
+}
+
+.typ-menu p:hover {
+    cursor: pointer;
+    color: #757575;
+    border-color: #232124;
+}
+
+.typ-header-dark p:hover {
+    color: #ffffff;
+    border-color: #232124;
+}
+
+.typ-main-image-section {
+    background: linear-gradient(to right,#999da6, #575d6b);
+    position: relative;
+}
+
+.typ-main-image {
+    background: url(https://img1.goodfon.ru/wallpaper/nbig/b/57/wallpaper-boke-razmytost-cyberspace-svechenie-ogni-data-st-1.jpg) no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.typ-tagline {
+    font-family: 'Noto Serif', serif;
+    font-size: 2em;
+    color: #0b2969;
+    position: absolute;
+    width: 900px;
+    top: calc(20% - 10px);
+    left: calc(80% - 900px);
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 16px 26px;
+    border-radius: 8px;
+    box-shadow: 0 16px 16px rgba(0,0,0,.2);
+}
+
+.typ-benefits-section {
+    padding: 10px 0;
+    padding: 20px 0 30px;
+}
+
+.typ-fix-width {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.typ-auto-width {
+    width: auto;
+    margin: 0 auto;
+}
+
+.typ-benefit-div {
+    width: 25%;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    vertical-align: top;
+    color: #626977;
+}
+
+.typ-benefit-div-img {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.typ-benefit-div img {
+    width: 60px;
+    height: 60px;
+}
+
+.typ-benefit-div h2 {
+    color: #31353e;
+}
+
+.typ-service-section {
+    background-color: #dbdde0;
+    padding: 20px 0 30px;
+}
+
+.typ-service-div {
+    width: 30%;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+}
+
+.typ-service-div img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.typ-service-div a {
+    display: block;
+    font-weight: bold;
+    color: #505050;
+    text-decoration: none;
+    margin: 20px 0 10px;
+}
+
+.typ-service-div a:hover {
+    color: #1e2025;
+}
+
+.typ-about-section {
+    padding: 20px 0 30px;
+}
+
+.typ-news-section {
+    padding: 20px 0 30px;
+    background-color: #bc3b61;
+    color: #ffffff;
+}
+
+.typ-news-section h2 {
+    border-bottom: 1px solid #fff214; 
+}
+
+.typ-news-section a {
+    color: #fff;
+    display: block;
+    padding: 10px 0;
+}
+
+.typ-contacts-section {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    padding: 20px 0 80px;
+}
+
+.scroll-top-button {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    background-color: #454c5a;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 10px 13px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.scroll-top-button img {
+    width: 35px;
+    height: 34px;
+    transform: rotate(-90deg);
+}
+
+.scroll-top-button:hover {
+    background-color: #bc3b61;
+    cursor: pointer;
+}
+
+.typ-questions {
+    width: 530px;
+    margin: 0 auto;
+    text-align: left
+}
+
+.typ-questions-header {
+    margin-bottom: 26px;
+}
+
+.typ-questions li {
+    margin: 10px 0;
+}
