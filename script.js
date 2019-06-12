@@ -14,18 +14,16 @@ var benefitsData = [
     {
         title: 'УСТРОЙСТВА ПЕРЕДАЧИ И ПРИЕМА ИНФОРМАЦИИ',
         text: 'Модем, сетевая карта являются непременными атрибутами современных информационных систем, которые все больше приобретают черты распределенных информационных систем, в которых информация хранится не в одном месте, а распределена в пределах некоторой сети ',
-       imgUrl: 'http://chittagongit.com/download/269331',
+        imgUrl: 'http://chittagongit.com/download/269331',
         color: '#ff188f'
     },
     {
         title: 'УСТРОЙСТВА ХРАНЕНИЯ ИНФОРМАЦИИ',
         text: 'Магнитные диски, лазерные диски, флэшки. Используются для временного (непродолжительного) или длительного хранения обрабатываемой и накапливаемой информации',
-         imgUrl: 'http://www.sclance.com/pngs/google-drive-png/google_drive_png_594260.png',
+        imgUrl: 'http://www.sclance.com/pngs/google-drive-png/google_drive_png_594260.png',
         color: '#07bbff'
     }
-]
-
-
+];
 
 function addBenefits (element) {
     for (var i = 0; i < benefitsData.length; i++) {
@@ -51,25 +49,7 @@ function addBenefits (element) {
 
         element.appendChild(newDiv);
     }
-}
-
-/*function addServices (element) {
-    for (var i = 0; i < printingServicesData.length; i++) {
-        var newDiv = document.createElement('div');
-        newDiv.className = 'typ-service-div';
-
-        var newImage = document.createElement('img');
-        newImage.src = printingServicesData[i].imgUrl;
-        newDiv.appendChild(newImage);
-
-        var newLink = document.createElement('a');
-        newLink.innerHTML = printingServicesData[i].title;
-        newLink.href = printingServicesData[i].link;
-        newDiv.appendChild(newLink);
-
-        element.appendChild(newDiv);
-    }
-}*/
+};
 
 var benefitsContainer = document.getElementById('benefits-container');
 addBenefits(benefitsContainer);
@@ -78,8 +58,8 @@ function scrollToSection (id) {
     document.getElementById(id).scrollIntoView({
         block: "start",
         behavior: "smooth"
-      });
-}
+    });
+};
 
 var showScrollTopButton = false;
 
@@ -93,6 +73,20 @@ window.onscroll = function() {
         showScrollTopButton = false;
         document.getElementById('scroll-top-button').style.display = 'none';
     }
-}
+};
 
-console.log(benefitsContainer);
+function logout () {
+    window.localStorage.removeItem('login');
+    checkIsAuth();
+};
+
+function checkIsAuth () {
+    if (!window.localStorage.login) window.open('./login.html', '_self');
+    // if (window.localStorage.login) window.open('./tests.html', '_self');
+};
+
+function openTestPage () {
+    window.open('./tests.html', '_self');
+};
+
+checkIsAuth();

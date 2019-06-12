@@ -75,7 +75,7 @@ body {
 .typ-main-image {
     background: url(https://img1.goodfon.ru/wallpaper/nbig/b/57/wallpaper-boke-razmytost-cyberspace-svechenie-ogni-data-st-1.jpg) no-repeat;
     background-size: cover;
-    height: 600px;
+    height: 690px;
     width: 100%;
     margin: 0 auto;
 }
@@ -231,4 +231,65 @@ body {
 
 .typ-questions li {
     margin: 10px 0;
+}
+
+/*-----------------login-page------------------*/
+
+.typ-login-root {
+    width: 100vw;
+    height: 100vh;
+    background-color: #454c5a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.typ-login-form {
+    box-sizing: border-box;
+    width: 420px;
+    max-width: 100%;
+    height: 310px;
+    background-color: #ffffff;
+    border: #0b2969 1px solid;
+    border-radius: 8px;
+    box-shadow: 4px 0 4px #454c5a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.typ-login-input {
+    width: calc(100% - 50px);
+}
+
+.typ-invalid-input {
+    border-color: #bc3b61 !important;
+}
+
+/*------------------test-page-----------------------*/
+ 
+.typ-test-page {
+    padding-top: 80px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.typ-test-container {
+    width: 600px;
+    max-width: 600px;
+}
+
+.typ-test-item {
+    margin: 20px 0;
+}
+
+.typ-back-button {
+    position: absolute;
+    top: 40px;
+    left: calc(50% - 300px);
 }
